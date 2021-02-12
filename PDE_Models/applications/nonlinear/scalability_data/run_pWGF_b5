@@ -1,0 +1,7 @@
+mpirun -n 4 python pWGF_b5_7x7.py
+
+mpirun -n 4 python pWGF_b5_15x15.py
+
+mpirun -n 4 python pWGF_b5_31x31.py
+
+mpirun -n 4 python pWGF_b5_63x63.py

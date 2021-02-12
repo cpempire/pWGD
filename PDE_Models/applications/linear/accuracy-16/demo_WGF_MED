@@ -1,0 +1,6 @@
+for i in $(seq 1 1)
+do
+	mpirun -n 1 python WGF_MED.py
+
+	cp data/data_nDimensions_17_nCores_1_nSamples_16_isProjection_False_WGF.p data/data_nDimensions_17_nCores_1_nSamples_16_isProjection_False_WGF_MED_$i.p
+done

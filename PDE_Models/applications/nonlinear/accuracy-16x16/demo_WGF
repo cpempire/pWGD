@@ -1,0 +1,13 @@
+for i in $(seq 1 10)
+do
+	mpirun -n 1 python WGF.py
+
+	cp data/data_nDimensions_289_nCores_1_nSamples_16_isProjection_False_WGF.p data/data_nDimensions_289_nCores_1_nSamples_16_isProjection_False_WGF_$i.p
+done
+
+for i in $(seq 1 10)
+do
+	mpirun -n 1 python pWGF.py
+
+	cp data/data_nDimensions_289_nCores_1_nSamples_16_isProjection_True_WGF.p data/data_nDimensions_289_nCores_1_nSamples_16_isProjection_True_WGF_$i.p
+done

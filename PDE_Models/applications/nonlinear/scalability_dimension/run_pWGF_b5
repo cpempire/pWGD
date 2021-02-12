@@ -1,0 +1,7 @@
+mpirun -n 2 python pWGF_b5_16.py
+
+mpirun -n 2 python pWGF_b5_32.py
+
+mpirun -n 2 python pWGF_b5_64.py
+
+mpirun -n 2 python pWGF_b5_128.py

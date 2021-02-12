@@ -1,0 +1,6 @@
+for i in $(seq 2 10)
+do
+	mpirun -n 1 python pSVGD.py
+
+	cp data/data_nDimensions_17_nCores_1_nSamples_16_isProjection_True_SVGD.p data/data_nDimensions_17_nCores_1_nSamples_16_isProjection_True_SVGD_$i.p
+done

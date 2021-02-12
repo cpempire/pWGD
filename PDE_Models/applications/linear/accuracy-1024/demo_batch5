@@ -1,0 +1,13 @@
+for i in $(seq 1 10)
+do
+	mpirun -n 16 python pWGF_batch5.py
+
+	cp data/data_nDimensions_1025_nCores_16_nSamples_256_isProjection_True_WGF.p data/data_nDimensions_1025_nCores_16_nSamples_256_isProjection_True_WGF_batch5_$i.p
+done
+
+for i in $(seq 1 10)
+do
+	mpirun -n 16 python pSVGD_batch5.py
+
+	cp data/data_nDimensions_1025_nCores_16_nSamples_256_isProjection_True_SVGD.p data/data_nDimensions_1025_nCores_16_nSamples_256_isProjection_True_SVGD_batch5_$i.p
+done
